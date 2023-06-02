@@ -27,6 +27,8 @@ h1, h2, h3{
 
 p, a{
     font-family: var(--parrafos);
+    text-decoration: none;
+    color: #ece9e9;
 }
 
 .ocultar{
@@ -123,6 +125,7 @@ p, a{
 .logo h2 span{
     color: var(--turquesa);
 }
+
 .contenido-navegacion{
     display: flex;
     align-items: center;
@@ -286,6 +289,107 @@ p, a{
     font-size: 2rem;
 }
 
+/*seccion Auto-partes*/
+.Auto-partes h2{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--negro);
+}
+@media(min-width: 768px) {
+    .Auto-partes h2{
+        font-size: 5rem;
+    }
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #f3f5f8;
+    padding-top: 80px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+.scroll img{
+    filter: invert(15%);
+}           
+.scroll h1{
+    color: #fbf8f6;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.cont>div{
+    box-shadow: 0px 0px 20px 0px rgba(30, 219, 229, 0.992);
+    background-color: #0ccdcd;
+    border-radius: 20px;
+}
+.cont>div:hover{
+    background-color: #393E46;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #0e1111;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #393736;
+}
 /*seccion sobre nosotros*/
 .nosotros h2{
     text-align: center;
@@ -297,6 +401,7 @@ p, a{
         font-size: 5rem;
     }
 }
+
 .contenido-nosotros{
     background-image: url('../img/nosotros.jpg');
     display: grid;
@@ -334,6 +439,7 @@ p, a{
 .texto-nosotros p{
     font-size: 2.2rem;
     text-align: center;
+    color: #000000;
 }
 @media(min-width: 768px) {
     .texto-nosotros p{
@@ -388,6 +494,7 @@ p, a{
 .servicio p{
     font-size: 1.8rem;
     text-align: center;
+    color: #000000;
 }
 
 @media(min-width: 768px) {
@@ -503,8 +610,9 @@ p, a{
     color: var(--negro);
 }
 
-.footer .logo h2, .footer p{
+.footer .logo h2, .footer p, footer a{
     text-align: left;
+    color: #000000;
 }
 
 @media(min-width: 768px) {
@@ -512,5 +620,6 @@ p, a{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        
     }
 }
