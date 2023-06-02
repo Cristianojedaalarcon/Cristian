@@ -29,36 +29,17 @@ p, a{
     text-decoration: none;
 }
 
-.ocultar{
-    display: none;
-}
-.contenedor{
-    margin: 0 auto;
-    max-width: 120rem;
-    width: 95%;
-}
-
 .btn{
-  padding: 1rem 4rem;
-  font-weight: bold;
-  font-family: var(--parrafos);
-  font-size: 2rem;
-  border: none;
-  color: var(--blanco);
-  
-}
-.hamburguesa span{
-    width: 5rem;
-    height: 1rem;
-    border: 3px solid white;
-    background-color: var(--griss);
-    display: block;
-}
-@media(min-width: 768px) {
-    .hamburguesa{
-        display: none;
-    }
-}
+    padding: 1rem 4rem;
+    font-weight: bold;
+    font-family: var(--parrafos);
+    font-size: 2rem;
+    border: none;
+    color: var(--blanco);
+    
+  }
+
+
 .bordes{
    border: 2px solid var(--turquesa);
    color: var(--turquesa);
@@ -66,8 +47,7 @@ p, a{
    display: block;
    text-align: justify;
    transition: background-color .3s ease-in-out;
- 
-    
+     
 }
 @media(min-width: 768px) {
     .bordes{
@@ -113,50 +93,6 @@ p, a{
     z-index: 3;
 }
 
-.navegacion{
-    background-color: var(--blanco);
-    position: absolute;
-    left: 0;
-    top: 70px;
-    width: 100%;
-    animation: desplazamiento .5s ease-in-out;
-}
-
-@media(min-width: 768px) {
-    .ocultar{
-        display: inline;
-    }
-}
-
-.navegacion a{
-    display: block;
-    font-size: 2rem;
-    padding: 1.1rem;
-    color: var(--griss);
-    text-decoration: none;
-    transition: background-color .3s ease-in-out;
-
-}
-.navegacion a:hover{
-    background-color: var(--negro);
-    color: var(--blanco);
-}
-
-@media(min-width: 768px) {
-    .navegacion a{
-        display: inline;
-    }
-    
-}
-@media(min-width: 768px) {
-    .navegacion{
-        position: relative;
-        top: unset;
-        width: auto;
-        background-color: unset;
-        animation: unset;
-    }
-}
 .logo h2{
     font-size: 3rem;
 }
@@ -170,6 +106,7 @@ p, a{
     box-sizing: border-box;
     color: rgb(0, 0, 0);
 }
+
 body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: #ffffff;
@@ -186,31 +123,7 @@ img {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:15%;
-    height: 70px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-.scroll{
-    background-color: rgb(255, 255, 255);
-    box-shadow: .1rem .2rem .3rem #ffffff;
-}
-.scroll img{
-    filter: invert(15%);
-}           
-.scroll h1{
-    color: #141C29;
-}
-.carrito{
-    filter: invert(100%);
-    width: 45px;
-    height: auto;
-}
+          
 .contenedor{
     display: flex;
     justify-content: center;
